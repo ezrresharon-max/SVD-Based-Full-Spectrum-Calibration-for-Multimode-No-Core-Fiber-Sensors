@@ -88,11 +88,11 @@ These calibration files are also provided in the `3. CALIBRATION_DATA/` director
 
 The same calibration methodology can be applied to the other two sensors by selecting their corresponding experimental datasets:
 
-| Sensor | Curvature | Strain      | Temperature |
+| Sensor  | Curvature | Strain      | Temperature |
 --------------------------------------------------
-| MNM1   | `CURV960` | `STRAIN960` | `TEMP960`   |
-| MNM2   | `CURV965` | `STRAIN965` | `TEMP965`   |
-| MNM3   | `CURV977` | `STRAIN977` | `TEMP977`   |
+| MNM-1   | `CURV960` | `STRAIN960` | `TEMP960`   |
+| MNM-2   | `CURV965` | `STRAIN965` | `TEMP965`   |
+| MNM-3   | `CURV977` | `STRAIN977` | `TEMP977`   |
 
 The sensor-specific datasets must be selected in the script before running the corresponding calibration. The provided MNM3 procedure serves as the reference example for reproducing the SVD-based calibration and validation methodology.
 
@@ -106,7 +106,7 @@ The script prompts the user to select the three previously generated calibration
 2. Strain calibration (`calibracionstrain_977.mat`)
 3. Temperature calibration (`calibraciontemperatura_977.mat`)
 
-For MNM3, these files are available in the `3. CALIBRATION_DATA/` directory.
+For MNM-3, these files are available in the `3. CALIBRATION_DATA/` directory.
 
 The user can then select one or multiple experimental spectra for analysis.
 
@@ -116,4 +116,4 @@ When the applied value can be extracted from the filename, the script also repor
 
 Additionally, the last analyzed spectrum is visualized relative to the three calibration trajectories, together with the normalized residual associated with each calibration model.
 
-For MNM1 and MNM2, the corresponding sensor-specific calibration files should be generated and selected before demodulation.
+For MNM-1 and MNM-2, the corresponding sensor-specific calibration files should be generated and selected before demodulation.
